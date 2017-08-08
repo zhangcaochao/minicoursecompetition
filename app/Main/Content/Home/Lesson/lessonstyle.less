@@ -1,0 +1,100 @@
+.lesson {
+    width: 13.75rem;
+    float: left;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0px;
+    margin: 5px 0;
+    border-radius: 4px;
+    overflow: hidden;
+    .detail {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .head {
+        width: 13.75rem;
+        height: 7.75rem;
+        background-image: linear-gradient(45deg, #DFDFDF 0%, #F8F8F8 100%);
+        border-radius: 6px 6px 0 0;
+        display: flex;
+        flex-direction: column;
+        .number {
+            width: 4rem;
+            height: 1.5rem;
+            background: #E97D68;
+            border-radius: 0 100px 100px 0;
+
+            font-size: 1rem;
+            color: #FFE6E1;
+            margin-top: 0.58rem;
+        }
+        .desc {
+            width: 100%;
+            height: 1.25rem;
+            margin-top: 0.24rem;
+            line-height: 1.25rem;
+            font-family: NotoSansHans-Medium;
+            font-size: 15px;
+            color: #666666;
+            align-self: center;
+            text-align: center;
+        }
+        .school {
+            width: 100%;
+            margin-top: 0.5rem;
+            height: 1rem;
+            line-height: 1rem;
+
+            font-size: 10px;
+            color: #999999;
+            align-self: center;
+            text-align: center;
+        }
+        .teacher {
+            width: 100%;
+            margin-top: 0.5rem;
+            height: 1rem;
+            line-height: 1rem;
+
+            font-size: 10px;
+            color: #999999;
+            align-self: center;
+            text-align: center;
+        }
+    }
+    .foot {
+        height: 3rem;
+        width: 13.75rem;
+        display: flex;
+        .vote {
+            width: 50%;
+            height: 3rem;
+
+            font-size: 15px;
+            color: #66C660;
+            text-align: center;
+            line-height: 3rem;
+            &.voted {
+                color: #ccc;
+            }
+        }
+        .poll {
+            width: 50%;
+            height: 3rem;
+            font-family: DINCond-Bold;
+            font-size: 20px;
+            color: #666666;
+            text-align: center;
+            line-height: 3rem;
+            .span {
+
+                font-size: 10px;
+                color: #2A2A2A;
+                line-height: 23px;
+            }
+        }
+    }
+}

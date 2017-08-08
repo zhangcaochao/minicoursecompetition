@@ -1,0 +1,111 @@
+.detial {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 3.17rem;
+    bottom: 3.17rem;
+    left: 1.67rem;
+    right: 1.67rem;
+    border-radius: 6px;
+    overflow: hidden;
+    .close {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+            width: 1.88rem;
+            height: 1.88rem;
+            color: #999;
+        }
+    }
+    .sn {
+        position: absolute;
+        left: 0;
+        top: 0.6rem;
+        width: 4rem;
+        line-height: 2.25rem;
+        background-color: #E97D68;
+        color: #fff;
+        font-size: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    .player {
+        height: 21rem;
+        border-bottom: #e5e5e5 solid 1px;
+    }
+    .teacherDesc {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 1.08rem;
+            color: #666;
+            font-weight: normal;
+            line-height: 3rem;
+            margin: 0 1.25rem;
+            border-bottom: #e5e5e5 solid 1px;
+        }
+        .teacherDescContent {
+            flex-grow: 1;
+            position: relative;
+            line-height: 2rem;
+            font-size: 14px;
+            overflow: auto;
+            padding: 1.25rem;
+            &:after {
+                content: '';
+                display: block;
+                height: 2rem;
+                position: absolute;
+                left: -1.25rem;
+                right: -1.25rem;
+                bottom: 0;
+                background-image: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0));
+            }
+        }
+    }
+    .rankBar {
+        height: 3.67rem;
+        display: flex;
+        border-top: #E5E5E5 solid 1px;
+        .rankInfo {
+            flex-grow: 1;
+            font-size: 1.25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            span {
+                font-size: 2.5rem;
+                color: #FFAA27;
+                vertical-align: baseline;
+                padding: 0 1.33rem;
+            }
+        }
+        button {
+            width: 16.5rem;
+            background-color: #66C660;
+            border: none;
+            color: #fff;
+            font-size: 1.25rem;
+            border-bottom-right-radius: 6px;
+            &[disabled] {
+                pointer-events: none;
+                background-color: #ccc;
+                color: #999;
+            }
+            .buttonTitle {
+                padding: 1.17rem 3.92rem;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none; //防止选择文字，但是input、textarea框中的输入也会被阻止，要手动设为text就可以输入了。
+    -webkit-tap-highlight-color: transparent; //所有绑定了js事件的div，再点击的时候都会有一个灰灰的高亮效果，这句话就是去掉它的
+}
+
+body, html {
+    background-color: #f2f2f2;
+    font-family: 'DINCond', NotoSansHans-Regular;
+}
+
+button, input, textarea {
+    border: none;
+    background-color: transparent;
+    transition: box-shadow 0.38s;
+    -webkit-user-select: text;
+    &:focus, &:active {
+        outline: none;
+        box-shadow: #66C660 0 0 10px;
+    }
+}
+
+@font-face {
+    font-family: 'DINCond';
+    src: url('\./DINCond-Bold.otf');
+}

@@ -1,0 +1,64 @@
+.rule {
+    .title {
+
+        font-size: 15px;
+        color: #333333;
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: inset 0 0 0 0 #E5E5E5;
+        .span {
+            margin-left: 0.75rem;
+        }
+        .icon {
+            width: 0.8rem;
+            height: 0.53rem;
+            margin-right: 20px;
+            transform: rotate(0deg);
+            transition: transform 0.38s;
+            &.rotate {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .ruledetail {
+        width: 100%;
+        height: 0rem;
+        overflow: hidden;
+        transition: height 0.38s;
+        &.show {
+            height: 21rem;
+        }
+        .introduction {
+            width: e('calc(100% - 1.6rem)');
+            margin: 1rem auto;
+            font-size: 13px;
+            color: #333333;
+            line-height: 23px;
+        }
+        .awardset {
+            width: e('calc(100% - 1.6rem)');
+            height: 11.5rem;
+
+            font-size: 14px;
+            color: #666666;
+            line-height: 23px;
+            margin: 0 auto;
+            .line {
+                line-height: 23px;
+                .character {
+                    color: #151515;
+                    display: inline;
+                }
+                .num {
+                    color: #002C28;
+                    display: inline;
+                }
+
+            }
+        }
+    }
+}

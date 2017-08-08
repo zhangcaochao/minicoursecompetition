@@ -1,0 +1,3 @@
+[submodule "playerraw/player"]
+	path = playerraw/player
+	url = git@gitlab.plaso.cn:wanjianming/p403player.git
