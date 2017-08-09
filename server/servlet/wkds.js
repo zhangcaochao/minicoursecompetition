@@ -57,5 +57,5 @@ module.exports=[
     ["/getallwk", getallwk],
     ["/searchwk", searchwk],
     ["/countwk", countwk],
-    ["/getwk", getwk],
+    ["/getwk", getwk]
 ]

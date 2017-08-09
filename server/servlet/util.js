@@ -75,6 +75,7 @@ module.exports=function(app1,configs){
     for (var config of configs){
         var servlets=config[0];
         var pathPrefix=config[1]||"";
+        log.error(config[1])
         for(var servlet of servlets){
             if(pathPrefix){
                 servlet[0]=pathPrefix+servlet[0];

@@ -7,6 +7,6 @@ var init=require("./servlet/util")
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 init(app,[
-    [require("./servlet/wkds")],
+    [require("./servlet/wkds")]
 ])
 app.listen(config.port,config.host);

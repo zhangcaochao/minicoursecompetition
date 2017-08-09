@@ -3,7 +3,7 @@ let port = '9000';
 let url = 'http://www.plaso.cn/wkds/api/'
 const net = axios.create({
 	//正式发布的时候一定要加上这个参数，注释掉这个参数是因为开发的时候需要走webpack server代理。
-	baseURL:url,
+	//baseURL:url,
 	timeout: 5000,
 })
 

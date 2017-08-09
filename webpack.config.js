@@ -32,7 +32,7 @@ module.exports = {
 				secure: false
 			},
 			'*': {
-				target: 'http://www.plaso.cn/wkds/api',//正式环境http://www.plaso.cn/wkds/api测试环境：http://devapp.plaso.cn/wkds/
+				target: 'http://127.0.0.1:9008/',//正式环境http://www.plaso.cn/wkds/api测试环境：http://devapp.plaso.cn/wkds/
 				changeOrigin: true,
 				secure: false
 			}
